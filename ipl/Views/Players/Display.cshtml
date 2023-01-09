@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Display";
+}
+<h1>abc</h1>
+<hr>
+<div class="text-center">
+    @{
+        List<Player> allPlayers=(List<Player>)ViewData["abc"];
+            <ol>
+                @foreach (Player p in allPlayers)
+                {
+                    <li>@p.FirstName</li>
+                }
+            </ol>
+            @* var str="<table border='2'><tr><th> Firstname</th><th>lastname</th></tr>";
+                @foreach (Player p in allPlayers)
+                {
+                    str=str+"<tr><td>"+@p.FirstName+"</td><td>"+@p.LastName+"</td></tr>";
+                    
+                }
+                str+="</table>"; *@
+
+        
+    }
+</div>
